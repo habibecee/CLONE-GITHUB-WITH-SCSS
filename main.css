@@ -707,6 +707,9 @@ td {
   justify-content: space-between;
   text-align: center;
 }
+.Container .Main-projects-bars-box:hover {
+  box-shadow: 0 0 1px 1px #8b949e;
+}
 .Container .Main-projects-bars-box-up {
   width: 100%;
   display: flex;
