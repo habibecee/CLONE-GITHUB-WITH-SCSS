@@ -1,0 +1,20 @@
+@import './--vendors/normalize';
+@import './--vendors/formalize';
+@import './--abstracts/variables'; 
+@import './--companents/header';
+@import './--companents/content';
+
+
+  .icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    //background-color: #fff;
+  }
+
+a,p{
+    font-family: $my-font;
+}

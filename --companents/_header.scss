@@ -1,0 +1,66 @@
+.Header {
+    margin: auto 0;
+    background-color: $header-bg;
+    height:50px ;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+    &-logo{
+
+        margin-right: $m-r-l;
+
+        svg{
+            width: 32px;
+            height: 32px;
+            color: #fff;
+            border-radius: 50%;
+        }
+    }
+
+    &-search{
+
+        position: relative;
+
+        input{
+            background-color: hsla(0,0%,100% , .125);
+            width: 300px;
+            height: 30px;
+            padding: 7px;
+            font-size: $size;
+            font-family: $my-font;
+            color: #fff;
+            border: none;
+            margin-right: $m-r-l;
+            border-radius: 3px;
+        }
+
+        svg{
+            position: absolute;
+            right: 20px;
+            top: 8px;
+            
+        }
+    }
+    &-leftLinks{
+
+        a{
+            color: #fff;
+            margin-right: $m-r-l;
+            font-size: $size;
+        }
+
+    }
+    
+    &-rightLinks{
+        margin-left: auto;
+
+        svg{
+            color: #ccc;
+            margin-left: $m-r-l;
+
+        }
+
+    }
+
+}
