@@ -370,11 +370,14 @@ td {
 
 .Header {
   margin: auto 0;
-  background-color: #24292e;
+  background-color: #161b22;
   height: 50px;
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 10px 5%;
+}
+.Header a:hover, .Header svg:hover {
+  color: #8b949e;
 }
 .Header-logo {
   margin-right: 16px;
@@ -382,7 +385,7 @@ td {
 .Header-logo svg {
   width: 32px;
   height: 32px;
-  color: #fff;
+  color: #c9d1d9;
   border-radius: 50%;
 }
 .Header-search {
@@ -406,7 +409,7 @@ td {
   top: 8px;
 }
 .Header-leftLinks a {
-  color: #fff;
+  color: #c9d1d9;
   margin-right: 16px;
   font-size: 14px;
 }
@@ -414,13 +417,13 @@ td {
   margin-left: auto;
 }
 .Header-rightLinks svg {
-  color: #ccc;
+  color: #c9d1d9;
   margin-left: 16px;
 }
 
 .Container {
   background-color: #0d1117;
-  color: #fff;
+  color: #c9d1d9;
 }
 .Container .Main {
   max-width: 1200px;
@@ -589,6 +592,9 @@ td {
 .Container .Main-projects-links .active {
   border-bottom: 2px solid #f78166;
 }
+.Container .Main-projects-links .active:hover {
+  border-bottom: 2px solid #f78166;
+}
 .Container .Main-projects .hr {
   display: flex;
   width: 100%;
@@ -677,12 +683,100 @@ td {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  text-align: center;
 }
 .Container .Main-projects-bars-box-up {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #8b949e;
+}
+.Container .Main-projects-bars-box-up a {
+  color: #58a6ff;
+  font-weight: bold;
+  margin: 0 5px;
+}
+.Container .Main-projects-bars-box-up:hover a {
+  text-decoration: underline;
+}
+.Container .Main-projects-bars-box-up span {
+  padding: 3px 5px;
+  border: 0.5px solid #8b949e;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.Container .Main-projects-bars-box-up .icon-menu {
+  cursor: -webkit-grab;
+  cursor: grab;
+  color: #8b949e;
+}
+.Container .Main-projects-bars-box-down {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+  text-align: left;
+}
+.Container .Main-projects-bars-box-down-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.Container .Main-projects-bars-box-down-down-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.Container .Main-projects-bars-box-down-down-left p {
+  font-size: 12px;
+}
+.Container .Main-projects-bars-box-down-down-left-1 {
+  width: 12px;
+  height: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  background-color: #e34c26;
+  margin-bottom: 5px;
+}
+.Container .Main-projects-bars-box-down-down-left-2 {
+  width: 12px;
+  height: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  background-color: #563d7c;
+  margin-bottom: 5px;
+}
+.Container .Main-projects-bars-box-down-down-left-3 {
+  width: 12px;
+  height: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  background-color: #f1e05a;
+  margin-bottom: 5px;
+}
+.Container .Main-projects-bars-box-down-down-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 5px;
+  color: #8b949e;
+}
+.Container .Main-projects-bars-box-down-down-right div svg {
+  font-size: 14px;
+}
+.Container .Main-projects-bars-box-down-down-right div span {
+  margin-top: 5px;
+  font-size: 13px;
+}
+.Container .Main-projects-bars-box-down-down-right .div1:hover, .Container .Main-projects-bars-box-down-down-right .div2:hover {
+  color: #58a6ff;
+  cursor: pointer;
 }
 
 .icon {

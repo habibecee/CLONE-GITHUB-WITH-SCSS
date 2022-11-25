@@ -4,7 +4,14 @@
     height:50px ;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 10px 5%;
+
+    a, svg{
+
+        &:hover{
+            color: $color-mute;
+        }
+    }
     
     &-logo{
 
@@ -13,7 +20,7 @@
         svg{
             width: 32px;
             height: 32px;
-            color: #fff;
+            color: $color-default;
             border-radius: 50%;
         }
     }
@@ -45,7 +52,7 @@
     &-leftLinks{
 
         a{
-            color: #fff;
+            color: $color-default;
             margin-right: $m-r-l;
             font-size: $size;
         }
@@ -56,7 +63,7 @@
         margin-left: auto;
 
         svg{
-            color: #ccc;
+            color: $color-default;
             margin-left: $m-r-l;
 
         }

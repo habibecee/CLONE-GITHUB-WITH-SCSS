@@ -19,10 +19,21 @@
     gap: $gap;
 }
 
+@mixin span($bg-color){
+    width: 12px;
+    height: 12px;
+    border: 1px solid $span-border;
+    border-radius: 50%;
+    background-color:$bg-color  ;
+    margin-bottom: 5px;
+    
+    
+}
+
 
 .Container{
     background-color: $content-bg;
-    color: #fff;
+    color: $color-default;
 
     .Main{
         max-width: 1200px;
@@ -192,7 +203,11 @@
                     } 
                 }
                 .active{
-                    border-bottom: 2px solid #f78166;
+                    border-bottom: 2px solid $active-border-bottom;
+
+                    &:hover{
+                        border-bottom: 2px solid $active-border-bottom;
+                    }
                 }
                 
             }
@@ -297,12 +312,95 @@
                     flex-direction: column;
                     align-items: flex-start;
                     justify-content: space-between;
+                    text-align: center;
 
                     &-up{
                         width: 100%;
                         display: flex;
                         align-items: center;
                         justify-content:space-between;
+                        color: $color-mute;
+                        
+
+                        a{
+                            color: $hover-text-color ;
+                            font-weight: bold;
+                            margin: 0 5px;
+                        }
+
+                        &:hover a{
+                            text-decoration: underline;
+
+                        }
+
+                        span{
+                            padding: 3px 5px;
+                            border: .5px solid $color-mute;
+                            border-radius: 50px;
+                            font-size: 12px;
+                            font-weight: bold;
+                        }
+
+                        .icon-menu{
+                            cursor:grab;
+                            color: $color-mute;
+                        }
+
+                    }
+
+                    &-down{
+                        @include flex-column-start-center(15px);
+                        text-align: left;
+
+                        &-down{
+                            @include flex-center-center(30px);
+
+                            &-left{
+                                @include flex-center-center(5px);
+
+                                p{
+                                    font-size: 12px;
+                                }
+
+                                &-1{
+                                   @include span($html-span); 
+                                }
+                                &-2{
+                                    @include span($css-span); 
+                                }
+                                &-3{
+                                    @include span($js-span); 
+                                }
+                            }
+
+                            &-right{
+                                @include flex-center-center(15px);
+                                margin-bottom: 5px;
+                                color: $color-mute;
+
+                                div svg{
+                                    font-size: 14px;
+
+                                   
+                                }
+
+                                div span{
+                                    margin-top: 5px;
+                                    font-size: 13px;
+                                   
+                                }
+
+                                .div1, .div2{
+
+                                    &:hover{
+                                        color: $hover-text-color;
+                                        cursor: pointer;
+                                    }
+                                }
+
+                            }
+                        }
+
                     }
                     
                 }
