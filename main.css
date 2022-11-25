@@ -387,26 +387,30 @@ td {
   height: 32px;
   color: #c9d1d9;
   border-radius: 50%;
+  cursor: pointer;
 }
 .Header-search {
   position: relative;
 }
 .Header-search input {
-  background-color: hsla(0deg, 0%, 100%, 0.125);
+  background-color: #0d1117;
   width: 300px;
   height: 30px;
-  padding: 7px;
+  padding: 10px;
   font-size: 14px;
-  font-family: "Chilanka", cursive;
-  color: #fff;
-  border: none;
+  border: none !important;
   margin-right: 16px;
-  border-radius: 3px;
+  border-radius: 6px;
 }
 .Header-search svg {
+  color: #8b949e;
   position: absolute;
   right: 20px;
   top: 8px;
+  cursor: pointer;
+}
+.Header-search svg:hover {
+  color: #c9d1d9;
 }
 .Header-leftLinks a {
   color: #c9d1d9;
@@ -416,9 +420,27 @@ td {
 .Header-rightLinks {
   margin-left: auto;
 }
-.Header-rightLinks svg {
+.Header-rightLinks a {
   color: #c9d1d9;
+  margin-right: 15px;
   margin-left: 16px;
+}
+.Header-rightLinks a img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+.Header-rightLinks a .icon-play3 {
+  transform: rotate(90deg);
+  font-size: 14px;
+  transition: 0.2s ease-in-out;
+}
+.Header-rightLinks a .icon-play3:hover {
+  color: #fff;
+}
+.Header-rightLinks a:hover {
+  color: #8b949e;
 }
 
 .Container {
@@ -777,6 +799,57 @@ td {
 .Container .Main-projects-bars-box-down-down-right .div1:hover, .Container .Main-projects-bars-box-down-down-right .div2:hover {
   color: #58a6ff;
   cursor: pointer;
+}
+
+.Footer {
+  width: 100%;
+  height: 70px;
+  padding: 30px 50px;
+  margin-top: 30px;
+  background-color: #0d1117;
+  color: #8b949e;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.Footer-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.Footer-left svg {
+  font-size: 28px;
+  cursor: pointer;
+}
+.Footer-left span {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.Footer-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 5px;
+}
+.Footer-right a {
+  color: #58a6ff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.Footer-right a:hover {
+  text-decoration: underline;
+}
+
+* {
+  font-family: "Chilanka", cursive;
+}
+
+body {
+  background-color: #0d1117;
 }
 
 .icon {

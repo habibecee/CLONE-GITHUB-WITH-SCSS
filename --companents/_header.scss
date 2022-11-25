@@ -22,30 +22,40 @@
             height: 32px;
             color: $color-default;
             border-radius: 50%;
+            cursor: pointer;
         }
     }
 
     &-search{
 
         position: relative;
+        
 
         input{
-            background-color: hsla(0,0%,100% , .125);
+            background-color: $content-bg;
             width: 300px;
             height: 30px;
-            padding: 7px;
+            padding: 10px;
             font-size: $size;
-            font-family: $my-font;
-            color: #fff;
-            border: none;
+            border: none !important;
             margin-right: $m-r-l;
-            border-radius: 3px;
+            border-radius: 6px;
+
+            
+
+            
         }
 
         svg{
+            color: $color-mute;
             position: absolute;
             right: 20px;
             top: 8px;
+            cursor: pointer;
+
+            &:hover{
+                color: $color-default;
+            }
             
         }
     }
@@ -62,9 +72,34 @@
     &-rightLinks{
         margin-left: auto;
 
-        svg{
+        a{
             color: $color-default;
+            margin-right: 15px;
             margin-left: $m-r-l;
+
+            img{
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                margin-bottom: 8px;
+            }
+
+            .icon-play3{
+                transform: rotate(90deg);
+                font-size: 14px;
+                transition: .2s ease-in-out;
+                
+
+                &:hover{
+                    color: #fff ;
+                }
+            }
+
+            &:hover{
+                color: $color-mute;
+            }
+
+            
 
         }
 

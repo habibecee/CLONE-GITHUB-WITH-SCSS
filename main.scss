@@ -3,7 +3,16 @@
 @import './--abstracts/variables'; 
 @import './--companents/header';
 @import './--companents/content';
+@import './--companents/footer';
 
+*{
+  font-family: $my-font;
+}
+
+
+body{
+  background-color: $content-bg;
+}
 
   .icon {
     display: inline-block;
